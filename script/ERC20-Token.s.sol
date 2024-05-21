@@ -4,7 +4,7 @@ pragma solidity ^0.8.25;
 import {Script} from "forge-std/Script.sol";
 import {ERC20Token} from "../src/ERC20-Token.sol";
 
-contract DeployFundMe is Script {
+contract DeployERC20Token is Script {
     function run(uint256 _amount) external returns (ERC20Token) {
         vm.startBroadcast();
 
