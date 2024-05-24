@@ -41,4 +41,4 @@ Ensure that you meet these requirements before proceeding with any operations or
 ## <a name="about"></a>About
 This repository contains a simple project demonstrating the implementation of an ERC-20 token on the Ethereum blockchain. The ERC-20 token standard defines a common set of rules and functionalities that any token on the Ethereum network should adhere to, enabling seamless interaction between tokens and applications.
 
-ERC-20 is the most widely adopted token standard on Ethereum, facilitating interoperability between different tokens and platforms. This standard ensures that all ERC-20 tokens follow a consistent and predictable behavior, making them easy to integrate into various wallets, exchanges, and decentralized applications (dApps).
+ERC-20 is the most widely adopted token standard on Ethereum, which is defined by Ethereum Improvement Proposal 20 (EIP-20), facilitating interoperability between different tokens and platforms. This standard ensures that all ERC-20 tokens follow a consistent and predictable behavior, making them easy to integrate into various wallets, exchanges, and decentralized applications (dApps).
