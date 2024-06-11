@@ -48,6 +48,8 @@ ERC-20 is the most widely adopted token standard on Ethereum, which is defined b
 ## <a name="functionalities"></a>Functionalities
 The `ERC20Token` smart contract provides essential functionalities for managing a custom `ERC20` token named `"AleksaPantic" (AP)`. This contract includes core features such as `minting` and `ownership` control, leveraging `OpenZeppelin`'s robust libraries for enhanced security and standard compliance. Below are the key functionalities provided by the `ERC20Token` contract:
 
+1. Token Initialization
+
 Upon deployment, the contract `mints` a specified initial amount of tokens to the `owner`. This ensures that the initial supply is controlled and managed by the contract `owner`.
 
 ```solidity
@@ -57,6 +59,8 @@ constructor(uint256 _amount) ERC20("AleksaPantic", "AP") Ownable(msg.sender) {
 ```
 `constructor(uint256 _amount)`: Initializes the contract with a specified amount of tokens `minted` to the `owner`. The token is named `"AleksaPantic"` with the symbol `"AP"`. The `owner` is set using `OpenZeppelin`'s `Ownable` contract.
 
+2. Minting New Tokens
+
 The contract `owner` can `mint` additional tokens as needed. This functionality allows for controlled inflation of the token supply, ensuring that only the `owner` has the ability to increase the total supply.
 
 ```solidity
@@ -65,6 +69,8 @@ function mint(uint256 _amount) external onlyOwner {
 }
 ```
 `mint(uint256 _amount)`: Allows the `owner` to `mint` new tokens. This function can only be called by the `owne`r of the contract, adding new tokens to the `owner`'s balance.
+
+3. Ownership Management
 
 The contract uses `OpenZeppelin`'s `Ownable` module to manage ownership. This ensures that only the designated `owner` can perform sensitive operations such as minting new tokens.
 
